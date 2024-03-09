@@ -2,8 +2,14 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://172.16.167.88:3306/gulimall_ums
-    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.167.88:3306/gulimall_ums?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&autoReconnectForPools=true&connectTimeout=300000&socketTimeout=600000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+      nacos:
+        discovery:
+          server-addr: 127.0.0.1:8848
+  application:
+      name: gulimall-member
 
 mybatis-plus:
   mapper-location: classpath*:/mapper/**/*.xml
@@ -13,5 +19,6 @@ mybatis-plus:
 
 server:
   port: 8001
+
 
 
