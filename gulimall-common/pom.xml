@@ -13,7 +13,7 @@
     <description>每一个微服务公共的依赖，bean，工具类等</description>
 
     <dependencies>
-
+        <!--服务注册 发现-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
@@ -24,6 +24,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-loadbalancer</artifactId>
@@ -82,18 +83,11 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- SpringCloud Alibaba Nacos Config -->
+        <!-- 配置中心来做配置管理 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-
-<!--        &lt;!&ndash;                服务注册/发现&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
-<!--        </dependency>-->
-
 
         <dependency>
             <groupId>javax.validation</groupId>
