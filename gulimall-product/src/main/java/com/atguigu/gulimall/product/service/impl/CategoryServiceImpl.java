@@ -30,6 +30,8 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return new PageUtils(page);
     }
 
+    //这段代码的主要目的是从所有分类中提取一级菜单，为它们设置子菜单，并根据排序值进行排序。
+    // 最终结果是一个经过排序的一级菜单列表，每个菜单项包含其子菜单的层级结构。
     @Override
     public List<CategoryEntity> listWithTree() {
         //1、查出所有分类

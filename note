@@ -1,0 +1,8 @@
+renren-generator：
+实体类（Entity）：根据数据库表的列自动生成对应的 Java 实体类，包括属性、getters、setters 方法等，通常与表中的字段一一对应。
+数据访问对象（DAO）：生成对应的 MyBatis Mapper 接口，用于数据库操作。这些接口通配合 XML 映射文件使用，以执行 SQL 语句。
+映射文件（Mapper XML）：为每个 DAO 接口生成对应的 MyBatis XML 映射文件，定义 SQL 查询和命令。
+服务接口（Service）：生成服务层接口，定义业务逻辑的抽象方法。
+服务实现类（ServiceImpl）：生成服务层接口的实现类，实现具体的业务逻辑。
+控制器（Controller）：生成对外暴露的 RESTful API 接口的控制器类，处理 HTTP 请求和响应。
+其他文件：可能还包括一些配置文件、工具类或通用代码片段等。
