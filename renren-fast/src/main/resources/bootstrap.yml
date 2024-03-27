@@ -32,14 +32,13 @@ spring:
   # 应用名称
   application:
     name: renren-fast
-  # Nacos 配置
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
+    # Nacos 配置cloud:
+    nacos: 
+       discovery:
+         server-addr: 127.0.0.1:8848
   # Nacos 配置导入
-  config:
-    import: optional:nacos://127.0.0.1:8848
+#  config:
+#    import: optional:nacos://127.0.0.1:8848
 
 #  resources:
 #    add-mappings: false
